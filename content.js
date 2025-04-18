@@ -1,6 +1,5 @@
 (function(){
-    var ul = document.querySelector('header .AppHeader-globalBar .AppHeader-globalBar-start .AppHeader-context-full nav ul')
-    // ul 是否存在
+    var ul = document.querySelector('header .AppHeader-globalBar .AppHeader-globalBar-start .AppHeader-context-full nav ul');
     if (!ul) {
         return
     }

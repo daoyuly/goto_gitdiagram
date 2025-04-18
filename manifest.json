@@ -1,14 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "gitdiagram",
+  "name": "Goto Gitdiagram",
   "version": "1.0",
-  "author": "umu",
-  "description": "github link gitdiagram",
+  "author": "https://github.com/daoyuly/goto_gitdiagram",
+  "description": "github goto gitdiagram",
   "permissions": [
     "activeTab",
-    "storage",
     "scripting",
-    "unlimitedStorage",
     "declarativeContent"
   ],
   "action": {
@@ -23,8 +21,7 @@
         "https://github.com/*"
       ],
       "resources": [
-        "img/*.png",
-        "img/*.gif"
+        "img/*.png"
       ]
     }
   ],
