@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "gitdiagram",
+  "version": "1.0",
+  "author": "umu",
+  "description": "github link gitdiagram",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "unlimitedStorage",
+    "declarativeContent"
+  ],
+  "action": {
+    "default_icon": "icon-32.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "resources": [
+        "img/*.png",
+        "img/*.gif"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
